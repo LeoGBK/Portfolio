@@ -47,12 +47,32 @@
   border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
 
-/* Applying media query to change <img> and text size when the display width is higher. */
-@media only screen and (min-width: 500px) {
+/* Applying media query (320 x 480) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
+@media only screen and (min-width: 480px) {
   #skillset > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
+@media only screen and (min-width: 600px) {
+  #skillset > div {
+    gap: 3rem;
+  }
+}
+
+/* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
+@media only screen and (min-width: 1024px) {
+  #skillset img {
+    max-width: 9rem;
+  }
+}
+
+/* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1500px) {
+  #skillset img {
+    max-width: 15rem;
+    margin-bottom: 5rem;
   }
 }

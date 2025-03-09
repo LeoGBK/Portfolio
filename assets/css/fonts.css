@@ -1,36 +1,103 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--gray3);
-    text-align: center;
-    font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--gray3);
+  text-align: center;
+  font-size: 14px;
 }
 
-header, footer, section.even {
-    color: var(--white);
+header,
+footer,
+section.even {
+  color: var(--white);
 }
 
 span {
-    font-size: large;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
 }
 
 small {
-    font-size: medium;
-    font-weight: lighter;
+  font-size: 11px;
+  font-weight: lighter;
+  display: block;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-h2, h3, h4 {
-    letter-spacing: 0.3rem;
+h2,
+h3,
+h4 {
+  letter-spacing: 0.3rem;
 }
 
-h1, h3 {
-    text-transform: uppercase;
+h1,
+h3 {
+  text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Applying media query (320 x 480) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
+@media only screen and (min-width: 480px) {
+  span {
+    display: inline;
+  }
+
+  small {
+    display: inline;
+  }
+}
+
+/* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: large;
+  }
+
+  h2 {
+    font-size: large;
+  }
+}
+
+/* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+}
+
+/* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1500px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 2.2rem;
+  }
+
+  span {
+    font-size: x-large;
+  }
+
+  small {
+    font-size: 20px;
+  }
 }

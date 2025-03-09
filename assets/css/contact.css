@@ -24,12 +24,13 @@ textarea:focus {
 
 textarea {
   resize: none;
+  height: 100px;
 }
 
 form button {
   background-color: var(--secondary);
   color: var(--white);
-  margin: 3rem;
+  margin: 0.5rem;
   border: none;
   padding: 1rem;
   border-radius: 15px;
@@ -39,6 +40,10 @@ form button {
 
 form button:hover {
   background-color: var(--secondary-dark);
+}
+
+#social-media {
+  margin-top: 2.5rem;
 }
 
 #social-media img {
@@ -62,4 +67,42 @@ form button:hover {
 
 #youtube:hover {
   background-color: red;
+}
+
+/* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
+@media only screen and (min-width: 1024px) {  
+  input, textarea {
+    font-size: large;
+  }
+  
+  form button {
+    font-size: large;
+  }
+
+  #social-media img {
+    width: 45px;
+  }
+}
+
+/* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1500px) {
+  form {
+    font-size: x-large;
+  }
+
+  input, textarea {
+    font-size: xx-large;
+  }
+
+  textarea {
+    height: 200px;
+  }
+  
+  form button {
+    font-size: x-large;
+  }
+
+  #social-media img {
+    width: 55px;
+  }
 }
