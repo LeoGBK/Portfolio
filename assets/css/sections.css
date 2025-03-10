@@ -3,8 +3,8 @@ html {
 }
 
 section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3.5rem;
 }
 
 #navbar,
@@ -42,14 +42,12 @@ section hr {
   margin-bottom: 3rem;
 }
 
-
 /* Applying media query (320 x 480) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
 @media only screen and (min-width: 480px) {
   section hr {
     margin-bottom: 4rem;
   }
 }
-
 
 /* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
 @media only screen and (min-width: 1024px) {
@@ -60,6 +58,10 @@ section hr {
 
 /* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
 @media only screen and (min-width: 1500px) {
+  section {
+    padding-top: 6rem;
+  }
+
   section hr {
     margin-bottom: 6.5rem;
   }

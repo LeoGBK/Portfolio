@@ -101,7 +101,7 @@
   }
 
   #navbar.open ul {
-    max-height: 200px;
+    max-height: 250px;
     font-size: x-large;
   }
 }

@@ -1,5 +1,5 @@
 header {
-  padding: 11rem 0 11rem;
+  padding: 9rem 0 9rem;
   /* padding: 5rem 0 3rem; */
   position: relative;
   overflow: hidden;
@@ -14,4 +14,32 @@ header video {
   min-width: 100%;
   min-height: 100%;
   opacity: 0.2;
+}
+
+/* Applying media query (320 x 480) (480 x 800) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
+@media only screen and (min-width: 480px) {
+  header {
+    padding: 4rem 0 4rem;
+  }
+}
+
+/* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
+@media only screen and (min-width: 600px) {
+  header {
+    padding: 26rem 0 26rem;
+  }
+}
+
+/* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 18rem 0 18rem;
+  }
+}
+
+/* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1500px) {
+  header {
+    padding: 27rem 0 27rem;
+  }
 }

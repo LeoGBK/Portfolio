@@ -1,3 +1,7 @@
+#portfolio div {
+  margin-top: 4.5em;
+}
+
 #portfolio button {
   display: block;
   position: relative;
