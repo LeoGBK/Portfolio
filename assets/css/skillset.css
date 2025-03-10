@@ -75,4 +75,17 @@
     max-width: 15rem;
     margin-bottom: 5rem;
   }
+
+  #skillset span {
+    width: 150px;
+    top: -45px;
+    left: 45.5%;
+  }
+}
+
+/* Applying media query (more than 1920px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1920px) {
+  #skillset span {
+    left: 47%;
+  }
 }
