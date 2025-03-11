@@ -18,5 +18,17 @@
   "homepage": "https://github.com/LeoGBK/Portfolio#readme",
   "dependencies": {
     "eric-meyer-reset": "^2.0.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "glob": "^11.0.1",
+    "html-webpack-plugin": "^5.6.3",
+    "inflight": "^1.0.6",
+    "mini-css-extract-plugin": "^2.9.2",
+    "rimraf": "^6.0.1",
+    "terser-webpack-plugin": "^5.3.14",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   }
 }
