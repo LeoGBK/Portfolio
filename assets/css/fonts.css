@@ -23,6 +23,10 @@ small {
   display: block;
 }
 
+h1 {
+  font-size: large;
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -56,7 +60,7 @@ h4 {
 /* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
 @media only screen and (min-width: 600px) {
   h1 {
-    font-size: large;
+    font-size: x-large;
   }
 
   h2 {
@@ -71,7 +75,7 @@ h4 {
 /* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   h2 {

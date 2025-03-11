@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Leo Bermeo's Professional Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoGBK/Portfolio.git"
+  },
+  "author": "Leo G. Bermeo Kittyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeoGBK/Portfolio/issues"
+  },
+  "homepage": "https://github.com/LeoGBK/Portfolio#readme"
+}

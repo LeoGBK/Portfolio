@@ -1,6 +1,6 @@
 header {
   padding: 9rem 0 9rem;
-  /* padding: 5rem 0 3rem; */
+  /* padding: 5rem 0 3rem; ---> original setting */
   position: relative;
   overflow: hidden;
   background: linear-gradient(var(--black), var(--black2));
@@ -19,27 +19,34 @@ header video {
 /* Applying media query (320 x 480) (480 x 800) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
 @media only screen and (min-width: 480px) {
   header {
-    padding: 4rem 0 4rem;
+    padding: 3.5rem 0 4.5rem;
   }
 }
 
 /* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
 @media only screen and (min-width: 600px) {
   header {
-    padding: 26rem 0 26rem;
+    padding: 25rem 0 26rem;
   }
 }
 
-/* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
+/* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
 @media only screen and (min-width: 1024px) {
   header {
-    padding: 18rem 0 18rem;
+    padding: 10rem 0 13.5rem;
   }
 }
 
-/* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
-@media only screen and (min-width: 1500px) {
+/* Applying media query (900 x 1600) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1600px) {
   header {
-    padding: 27rem 0 27rem;
+    padding: 17rem 0 21rem;
+  }
+}
+
+/* Applying media query (more than 1600px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
+@media only screen and (min-width: 1920px) {
+  header {
+    padding: 18rem 0 30rem;
   }
 }
