@@ -60,7 +60,7 @@
 }
 
 #portfolio button:after {
-  content: url(/assets/img/icons/zoom.svg);
+  content: url(/src/assets/img/icons/zoom.svg);
   width: 50%;
   position: absolute;
   z-index: 2;
@@ -87,7 +87,6 @@
   }
 }
 
-
 /* Applying media query (1024 x 1920) to change <img> and text size, positions and behavior when the display width is higher than monitors. */
 @media only screen and (min-width: 1024px) {
   #portfolio button {
@@ -104,7 +103,6 @@
     gap: 2em;
   }
 }
-
 
 /* Applying media query (more than 1500px) to change <img> and text size, positions and behavior when the display width is higher than high resolution monitors. */
 @media only screen and (min-width: 1500px) {
