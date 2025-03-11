@@ -46,6 +46,10 @@ h4 {
   font-size: 1.1rem;
 }
 
+p {
+  display: none;
+}
+
 /* Applying media query (320 x 480) to change <img> and text size, positions and behavior when the display width is higher than smallest smartphones. */
 @media only screen and (min-width: 480px) {
   span {
