@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-  
+
 module.exports = {
     mode: 'development', // Modo de desarrollo.
     entry: ['./src/index.js'], // Archivo de entrada principal.
@@ -49,5 +49,4 @@ module.exports = {
             new TerserPlugin()
         ]
     },
-
 }
