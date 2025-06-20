@@ -1,35 +1,46 @@
-// Select elements
+// Modal elements
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
-const modalDescription = document.getElementById("modal-description");
-const closeModal = document.querySelector(".close");
+const modalDesc = document.getElementById("modal-description");
+const modalClose = document.querySelector(".close");
 
-// Get all experience links
-const experienceLinks = document.querySelectorAll("#experience a");
+// Optional: Create a "Visit Website" button
+let modalButton = document.createElement("a");
+modalButton.textContent = "Visit website";
+modalButton.target = "_blank";
+modalButton.rel = "noopener";
+modalButton.classList.add("explink"); // CSS already has .explink styles
+modalDesc.after(modalButton); // Insert after description <p>
 
-experienceLinks.forEach(link => {
-    link.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default action
+// Open modal on click
+document.querySelectorAll(".experience-item").forEach(item => {
+    item.addEventListener("click", () => {
+        const title = item.getAttribute("data-title");
+        const description = item.getAttribute("data-description");
+        const url = item.getAttribute("data-url");
 
-        const titleElement = link.querySelector("h4");
-        const descriptionElement = link.querySelector("p");
+        modalTitle.textContent = title;
+        modalDesc.textContent = description;
 
-        if (titleElement && descriptionElement) {
-            modalTitle.textContent = titleElement.textContent;
-            modalDescription.textContent = descriptionElement.textContent;
-            modal.style.display = "flex"; // Show modal
+        if (url) {
+            modalButton.href = url;
+            modalButton.style.display = "inline-block";
+        } else {
+            modalButton.style.display = "none";
         }
+
+        modal.style.display = "flex";
     });
 });
 
-// Close modal when clicking on the close button
-closeModal.addEventListener("click", () => {
+// Close modal
+modalClose.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// Close modal when clicking outside of the content
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
+// Close modal when clicking outside
+window.addEventListener("click", e => {
+    if (e.target === modal) {
         modal.style.display = "none";
     }
 });

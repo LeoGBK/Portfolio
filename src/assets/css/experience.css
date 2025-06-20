@@ -21,13 +21,20 @@
 }
 
 .explink {
-  color: var(--gray3);
+  font-size: 8px;
+  color: var(--primary);
+  background-color: var(--white);
+  padding: 0.5rem 1rem;
   text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .explink:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
+  background-color: var(--primary-dark);
+  text-decoration: none;
+  color: white;
 }
 
 /* Applying media query (600 x 1024) to change <img> and text size, positions and behavior when the display width is higher than tablets. */
@@ -41,6 +48,10 @@
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 5.5rem;
+  }
+
+  .explink {
+    font-size: 10px;
   }
 }
 
@@ -60,5 +71,10 @@
     font-size: 3.5rem;
     margin-top: 2.5rem;
     margin-bottom: 7.5rem;
+  }
+
+  .explink {
+    font-size: 20px;
+    margin-top: 25px;
   }
 }
